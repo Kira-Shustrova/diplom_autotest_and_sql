@@ -2,7 +2,7 @@
 Задание 1
 
 SELECT login,
-       COUNT("inDelivery") AS quantity
+       COUNT(*) AS quantity
 FROM "Orders"
 INNER JOIN "Couriers" AS c ON "courierId" = c.id
 WHERE "inDelivery" = true
